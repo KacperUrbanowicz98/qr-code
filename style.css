@@ -1,90 +1,32 @@
-/* Stylizacja całej strony */
 body {
-    background-color: hsl(212, 45%, 89%);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.qr_barcode {
+  border-radius: 10px;
+  background-color: #2a88cf;
+  padding: 40px;
+}
   
-  .description {
-    color: hsl(218, 44%, 22%);
-  }
-  /* Stylizacja karty z QR kodem */
-  .qr-card {
-    background-color: white;
-    border-radius: 15px; /* Zaokrąglone rogi */
-    width: 300px; /* Domyślna szerokość karty */
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Cień wokół karty */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Stylizacja kontenera wokół QR kodu */
-  .qr-container {
-    background-color: hsl(228, 45%, 44%); /* Niebieskie tło wokół QR kodu */
-    padding: 60px;
-    border-radius: 15px; /* Zaokrąglone rogi wokół QR kodu */
-    display: inline-block; /* Aby kontener wokół obrazka nie rozciągał się na całą szerokość */
-    margin-bottom: 60px;
-  }
-  
-  /* Stylizacja obrazka QR */
-  .qr-code {
-    width: 150px; /* Domyślna szerokość obrazka */
-    height: auto;
-    display: block; /* Zapobiega odstępom wokół obrazka */
-  }
-  
-  /* Stylizacja tekstu pod obrazkiem */
-  .qr-card p {
-    color: hsl(216, 15%, 48%); /* Kolor tekstu */
-    font-size: 14px;
-    margin: 0;
-  }
-  
-  /* Dostosowanie dla urządzeń mobilnych (max-width: 375px) */
-  @media (max-width: 375px) {
-    /* Zmniejsz szerokość karty */
-    .qr-card {
-      width: 260px; /* Mniejsza szerokość karty na urządzeniach mobilnych */
-      padding: 15px;
-    }
-  
-    /* Zmniejsz rozmiar obrazka */
-    .qr-code {
-      width: 120px; /* Mniejszy obrazek na urządzeniach mobilnych */
-    }
-  
-    /* Zmniejsz rozmiar tekstu */
-    .qr-card p {
-      font-size: 12px; /* Mniejszy tekst */
-    }
-  }
-  
-  /* Dostosowanie dla urządzeń desktopowych (min-width: 1440px) */
-  @media (min-width: 1440px) {
-    /* Zwiększ szerokość karty */
-    .qr-card {
-      width: 400px; /* Większa szerokość karty na desktopie */
-      padding: 30px;
-    }
-  
-    /* Zwiększ rozmiar obrazka */
-    .qr-code {
-      width: 180px; /* Większy obrazek na desktopie */
-    }
-  
-    /* Zwiększ rozmiar tekstu */
-    .qr-card p {
-      font-size: 16px; /* Większy tekst na desktopie */
-    }
-  }
-  
+.qr_card{
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30vh;
+  text-align: center;
+}
+.qr_scan{
+  color: hsl(218, 44%, 22%);
+  font-weight: 600;
+}
+
+.qr_coded {
+  color: hsl(216, 15%, 48%);
+  opacity: 60%;
+}
